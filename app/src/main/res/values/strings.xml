@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">ONEE</string>
+    <string name="title_activity_login">S\'indentifier</string>
+    <string name="prompt_email">adresse email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connexion</string>
+    <string name="action_sign_in_short">Se Connecter</string>
+    <string name="welcome">"Bonjoure "</string>
+    <string name="invalid_username">Nom d\'utilisateur non valide</string>
+    <string name="invalid_password">Le mot de passe doit contenir> 5 caractères</string>
+    <string name="login_failed">"Échec de la connexion"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le panneau de navigation</string>
+    <string name="nav_header_title">Branche Électricité</string>
+    <string name="nav_header_subtitle">http://one.org.ma</string>
+    <string name="nav_header_desc">Navigation</string>
+    <string name="action_settings">Paramètre</string>
+
+    <string name="menu_home">Accueil</string>
+    <string name="menu_gallery">Galerie</string>
+    <string name="menu_slideshow">Diaporama</string>
+    <string name="menu_tools">Outils</string>
+    <string name="menu_share">Partager</string>
+    <string name="menu_send">Envoyer</string>
+    <string name="title_activity_reset">Renetialise le mot de pass</string>
+    <string name="message_activity_reset">Confirmer votre email pour recevoir le lien de réinitialisation</string>
+    <string name="title_activity_sign_up">Inscriver-Vous</string>
 </resources>
