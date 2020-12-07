@@ -18,12 +18,16 @@
     <string name="action_settings">Paramètre</string>
 
     <string name="menu_home">Accueil</string>
-    <string name="menu_gallery">Galerie</string>
-    <string name="menu_slideshow">Diaporama</string>
-    <string name="menu_tools">Outils</string>
-    <string name="menu_share">Partager</string>
-    <string name="menu_send">Envoyer</string>
+    <string name="menu_reload_subscription">Recharger votre carte d\'abanment</string>
+    <string name="menu_bills_payment">Paiement des factures</string>
+    <string name="menu_consumption_history">Consultation de l\'historique de votre consommation</string>
+    <string name="menu_contact">Nous contactes</string>
+    <string name="menu_map">Trouver une agence</string>
+
     <string name="title_activity_reset">Renetialise le mot de pass</string>
     <string name="message_activity_reset">Confirmer votre email pour recevoir le lien de réinitialisation</string>
     <string name="title_activity_sign_up">Inscriver-Vous</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

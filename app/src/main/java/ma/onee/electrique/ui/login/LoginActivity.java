@@ -31,9 +31,7 @@ import android.widget.Toast;
 import ma.onee.electrique.MainActivity;
 import ma.onee.electrique.R;
 import ma.onee.electrique.ResetActivity;
-import ma.onee.electrique.SignUP;
-import ma.onee.electrique.ui.login.LoginViewModel;
-import ma.onee.electrique.ui.login.LoginViewModelFactory;
+import ma.onee.electrique.SignUpActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
+
         final TextView reset_action = findViewById(R.id.reset_action);
         final TextView signup_action = findViewById(R.id.signup_action);
         ClickableSpan clickableSpan_Reset = new ClickableSpan() {
@@ -64,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         ClickableSpan clickableSpan_SignUp = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Intent signUpActivity = new Intent(getApplicationContext(), SignUP.class);
+                Intent signUpActivity = new Intent(getApplicationContext(), SignUpActivity.class);
                 startActivity(signUpActivity);
                 finish();
                 Toast.makeText(LoginActivity.this, "Inscriver-Vous", Toast.LENGTH_SHORT).show();

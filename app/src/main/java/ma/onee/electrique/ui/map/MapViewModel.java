@@ -1,14 +1,14 @@
-package ma.onee.electrique.ui.share;
+package ma.onee.electrique.ui.map;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class MapViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public MapViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is share fragment");
     }

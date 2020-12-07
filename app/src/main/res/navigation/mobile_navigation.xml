@@ -12,32 +12,33 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="ma.onee.electrique.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_reload_subscription"
+        android:name="ma.onee.electrique.ui.reloadSubscription.ReloadSubscriptionFragment"
+        android:label="@string/menu_reload_subscription"
+        tools:layout="@layout/fragment_reload_subscription" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="ma.onee.electrique.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_bills_payment"
+        android:name="ma.onee.electrique.ui.billsPayment.BillsPaymentFragment"
+        android:label="@string/menu_bills_payment"
+        tools:layout="@layout/fragment_bills_payment" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="ma.onee.electrique.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_consumption_history"
+        android:name="ma.onee.electrique.ui.consumptionHistory.ConsumptionHistoryFragment"
+        android:label="@string/menu_consumption_history"
+        tools:layout="@layout/fragment_consumption_history" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="ma.onee.electrique.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_contact"
+        android:name="ma.onee.electrique.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="ma.onee.electrique.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_map"
+        android:name="ma.onee.electrique.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
 </navigation>

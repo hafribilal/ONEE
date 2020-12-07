@@ -1,4 +1,4 @@
-package ma.onee.electrique.ui.gallery;
+package ma.onee.electrique.ui.map;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ma.onee.electrique.R;
 
-public class GalleryFragment extends Fragment {
+public class MapFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private MapViewModel mapViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        mapViewModel =
+                ViewModelProviders.of(this).get(MapViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_map, container, false);
+        final TextView textView = root.findViewById(R.id.text_share);
+        mapViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,11 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".SignUP"
+    tools:context=".SignUpActivity"
     tools:showIn="@layout/activity_signup">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="3dp"
+            android:text="Civilite : "/>
+        <RadioGroup
+            android:id="@+id/rGroup_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+            <RadioButton
+                android:id="@+id/rBox_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M."
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"/>
+            <RadioButton
+                android:id="@+id/rBox_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mme."
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/txt_LastName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nom"
+    android:textSize="18dp"
+    android:layout_marginHorizontal="12dp"/>
+    <EditText
+        android:id="@+id/txt_FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prenom"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="12dp"/>
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse email"
+        android:inputType="textEmailAddress"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="12dp"/>
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="12dp"/>
+    <EditText
+        android:id="@+id/txt_ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmer le mot de passe"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="12dp"/>
+    <CheckBox
+        android:id="@+id/cBox_Terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="J\'ais lu et j\'accepte "
+        android:textSize="14dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txt_SpannableTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="les conditions generales d\'utilisation"
+        android:textSize="14dp"
+        android:layout_marginHorizontal="12dp"
+        android:paddingLeft="35dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/signup_Submite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Valider"
+        android:layout_marginHorizontal="12dp"/>
+
+</LinearLayout>

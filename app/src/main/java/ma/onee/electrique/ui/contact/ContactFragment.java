@@ -1,4 +1,4 @@
-package ma.onee.electrique.ui.send;
+package ma.onee.electrique.ui.contact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ma.onee.electrique.R;
 
-public class SendFragment extends Fragment {
+public class ContactFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private ContactViewModel contactViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        contactViewModel =
+                ViewModelProviders.of(this).get(ContactViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_contact, container, false);
+        final TextView textView = root.findViewById(R.id.text_tools);
+        contactViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
