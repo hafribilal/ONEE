@@ -24,7 +24,7 @@ public class ReloadSubscriptionFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         reloadSubscriptionViewModel =
                 ViewModelProviders.of(this).get(ReloadSubscriptionViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_bills_payment, container, false);
+        View root = inflater.inflate(R.layout.fragment_reload_subscription, container, false);
 //        final TextView textView = root.findViewById(R.id.text_gallery);
 //        reloadSubscriptionViewModel.getText().observe(this, new Observer<String>() {
 //            @Override
@@ -32,6 +32,7 @@ public class ReloadSubscriptionFragment extends Fragment {
 //                textView.setText(s);
 //            }
 //        });
+
        return root;
     }
 

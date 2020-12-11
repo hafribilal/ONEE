@@ -23,13 +23,13 @@ public class ConsumptionHistoryFragment extends Fragment {
         consumptionHistoryViewModel =
                 ViewModelProviders.of(this).get(ConsumptionHistoryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_consumption_history, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        consumptionHistoryViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = root.findViewById(R.id.text_slideshow);
+//        consumptionHistoryViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }
